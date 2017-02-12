@@ -1,0 +1,402 @@
+[
+  {
+    "id": "e2e-features",
+    "tags": [
+      {
+        "name": "@E2E",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "E2E features",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 1112631517,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.closebrowser()"
+            }
+          }
+        ],
+        "id": "e2e-features;verify-the-user-navigates-to-cart-page-on-adding-a-product-to-cart",
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 145312,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.beforeSupport(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "verify the user navigates to cart page on adding a product to cart",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 9587522492,
+              "status": "passed"
+            },
+            "name": "I am at the homepage",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "HomePageSteps.launchHomePage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1532467546,
+              "status": "passed"
+            },
+            "name": "I add product number 1 to cart",
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 21
+                }
+              ],
+              "location": "HomePageSteps.addToCart(int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 31315042,
+              "status": "passed"
+            },
+            "name": "verify cart section is displayed",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "CartPageSteps.verifyCartSectionDisplayed()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1238380564,
+              "status": "passed"
+            },
+            "name": "I click on checkout button",
+            "keyword": "When ",
+            "line": 9,
+            "match": {
+              "location": "CartPageSteps.clickCheckoutButton()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1623220128,
+              "status": "passed"
+            },
+            "name": "I login with username as \"Suraj\" and password as \"suraj\"",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Suraj",
+                  "offset": 26
+                },
+                {
+                  "val": "suraj",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginPageSteps.loginWithCredential(String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 133557549,
+              "status": "passed"
+            },
+            "name": "I enter \"suraj\" in full name",
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "val": "suraj",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckoutPageSteps.enterFullName(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 168331995,
+              "status": "passed"
+            },
+            "name": "I enter \"phase2\" in address1",
+            "keyword": "And ",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "val": "phase2",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckoutPageSteps.enterAddress1(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 230724395,
+              "status": "passed"
+            },
+            "name": "I enter \"hinjewadi\" in address2",
+            "keyword": "And ",
+            "line": 13,
+            "match": {
+              "arguments": [
+                {
+                  "val": "hinjewadi",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckoutPageSteps.enterAddress2(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 142179586,
+              "status": "passed"
+            },
+            "name": "I enter \"pune\" in city",
+            "keyword": "And ",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "val": "pune",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckoutPageSteps.enterCity(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 237195918,
+              "status": "passed"
+            },
+            "name": "I enter \"521452\" in zip code",
+            "keyword": "And ",
+            "line": 15,
+            "match": {
+              "arguments": [
+                {
+                  "val": "521452",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckoutPageSteps.enterZipCode(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 145971206,
+              "status": "passed"
+            },
+            "name": "I enter \"Maharashtra\" in State",
+            "keyword": "And ",
+            "line": 16,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Maharashtra",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckoutPageSteps.enterState(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 526579973,
+              "status": "passed"
+            },
+            "name": "I click on save address button",
+            "keyword": "And ",
+            "line": 17,
+            "match": {
+              "location": "CheckoutPageSteps.clickSaveAddressButton()"
+            }
+          },
+          {
+            "result": {
+              "duration": 340797553,
+              "status": "passed"
+            },
+            "name": "I click on continue to payment button",
+            "keyword": "And ",
+            "line": 18,
+            "match": {
+              "location": "CheckoutPageSteps.clickContinueToPaymentButton()"
+            }
+          },
+          {
+            "result": {
+              "duration": 184818713,
+              "status": "passed"
+            },
+            "name": "I enter \"555544446666\" in card number",
+            "keyword": "When ",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "val": "555544446666",
+                  "offset": 9
+                }
+              ],
+              "location": "PaymentPageSteps.enterCardNumber(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 121220060,
+              "status": "passed"
+            },
+            "name": "I enter \"suraj\" in name on card",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {
+                  "val": "suraj",
+                  "offset": 9
+                }
+              ],
+              "location": "PaymentPageSteps.enterNameOnCard(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 168735520,
+              "status": "passed"
+            },
+            "name": "I enter \"12\" in expiry month",
+            "keyword": "And ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 9
+                }
+              ],
+              "location": "PaymentPageSteps.enterExpiryMonth(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 128436511,
+              "status": "passed"
+            },
+            "name": "I enter \"21\" in expiry year",
+            "keyword": "And ",
+            "line": 23,
+            "match": {
+              "arguments": [
+                {
+                  "val": "21",
+                  "offset": 9
+                }
+              ],
+              "location": "PaymentPageSteps.enterExpiryYear(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 165579706,
+              "status": "passed"
+            },
+            "name": "I enter \"544\" in cvv code",
+            "keyword": "And ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "544",
+                  "offset": 9
+                }
+              ],
+              "location": "PaymentPageSteps.enterCVVCode(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5442710542,
+              "status": "passed"
+            },
+            "name": "I click on Pay button",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "location": "PaymentPageSteps.clickPayButton()"
+            }
+          },
+          {
+            "result": {
+              "duration": 35426999,
+              "status": "passed"
+            },
+            "name": "verify order successful message is displayed as \"Thanks for placing your order!! Your order will be dispatched soon!!\"",
+            "keyword": "Then ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thanks for placing your order!! Your order will be dispatched soon!!",
+                  "offset": 49
+                }
+              ],
+              "location": "OrderPageSteps.verifyOrderSuccessMsg(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 94405913,
+              "status": "passed"
+            },
+            "name": "verify order status of product is \"Pending\"",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pending",
+                  "offset": 35
+                }
+              ],
+              "location": "OrderPageSteps.verifyOrderStatus(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "Features/E2E.feature"
+  }
+]

@@ -1,0 +1,714 @@
+[
+  {
+    "id": "validate-home-page-features",
+    "tags": [
+      {
+        "name": "@homePage",
+        "line": 2
+      }
+    ],
+    "description": "",
+    "name": "validate home page features",
+    "keyword": "Feature",
+    "line": 4,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 584147360,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.closebrowser()"
+            }
+          }
+        ],
+        "id": "validate-home-page-features;verify-logo-on-the-navigation-bar-of-the-page",
+        "tags": [
+          {
+            "name": "@verifyLogo",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 85891,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.beforeSupport(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Verify logo on the navigation bar of the page",
+        "keyword": "Scenario",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 8048389493,
+              "status": "passed"
+            },
+            "name": "I am at the homepage",
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "HomePageSteps.launchHomePage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 291389255,
+              "status": "passed"
+            },
+            "name": "verify the logo on navigation bar",
+            "keyword": "Then ",
+            "line": 9,
+            "match": {
+              "location": "HomePageSteps.verifyLogo()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 565587918,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.closebrowser()"
+            }
+          }
+        ],
+        "id": "validate-home-page-features;verify-dropdown-menu-is-displayed-on-hovering-navigation-items;;2",
+        "tags": [
+          {
+            "name": "@homePage",
+            "line": 2
+          },
+          {
+            "name": "@verifyDropdownList",
+            "line": 11
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 74007,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.beforeSupport(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Verify dropdown menu is displayed on hovering navigation items",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "steps": [
+          {
+            "result": {
+              "duration": 7723872305,
+              "status": "passed"
+            },
+            "name": "I am at the homepage",
+            "keyword": "Given ",
+            "line": 13,
+            "match": {
+              "location": "HomePageSteps.launchHomePage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 526585375,
+              "status": "passed"
+            },
+            "name": "I hover on Games",
+            "keyword": "When ",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Games",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePageSteps.hoverOnNavBarMenu(String)"
+            },
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 74107586,
+              "status": "passed"
+            },
+            "name": "I see below dropdown list",
+            "keyword": "Then ",
+            "line": 15,
+            "match": {
+              "location": "HomePageSteps.verifyDropdownListItems(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "list item"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Arcade"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Sports"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "RPG"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Adventure"
+                ],
+                "line": 20
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 558769590,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.closebrowser()"
+            }
+          }
+        ],
+        "id": "validate-home-page-features;verify-dropdown-menu-is-displayed-on-hovering-navigation-items;;3",
+        "tags": [
+          {
+            "name": "@homePage",
+            "line": 2
+          },
+          {
+            "name": "@verifyDropdownList",
+            "line": 11
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 98315,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.beforeSupport(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Verify dropdown menu is displayed on hovering navigation items",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "steps": [
+          {
+            "result": {
+              "duration": 7241869137,
+              "status": "passed"
+            },
+            "name": "I am at the homepage",
+            "keyword": "Given ",
+            "line": 13,
+            "match": {
+              "location": "HomePageSteps.launchHomePage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 705940026,
+              "status": "passed"
+            },
+            "name": "I hover on Movies",
+            "keyword": "When ",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Movies",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePageSteps.hoverOnNavBarMenu(String)"
+            },
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 74648860,
+              "status": "passed"
+            },
+            "name": "I see below dropdown list",
+            "keyword": "Then ",
+            "line": 15,
+            "match": {
+              "location": "HomePageSteps.verifyDropdownListItems(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "list item"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Action"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Comedy"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Thriller"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Sci-Fi"
+                ],
+                "line": 20
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 614232381,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.closebrowser()"
+            }
+          }
+        ],
+        "id": "validate-home-page-features;verify-dropdown-menu-is-displayed-on-hovering-navigation-items;;4",
+        "tags": [
+          {
+            "name": "@homePage",
+            "line": 2
+          },
+          {
+            "name": "@verifyDropdownList",
+            "line": 11
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 92914,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.beforeSupport(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Verify dropdown menu is displayed on hovering navigation items",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "steps": [
+          {
+            "result": {
+              "duration": 7718047393,
+              "status": "passed"
+            },
+            "name": "I am at the homepage",
+            "keyword": "Given ",
+            "line": 13,
+            "match": {
+              "location": "HomePageSteps.launchHomePage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 515366087,
+              "status": "passed"
+            },
+            "name": "I hover on Mobiles",
+            "keyword": "When ",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobiles",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePageSteps.hoverOnNavBarMenu(String)"
+            },
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 68884991,
+              "status": "passed"
+            },
+            "name": "I see below dropdown list",
+            "keyword": "Then ",
+            "line": 15,
+            "match": {
+              "location": "HomePageSteps.verifyDropdownListItems(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "list item"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Apple"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Motorola"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Blackberry"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Sony"
+                ],
+                "line": 20
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 551559621,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.closebrowser()"
+            }
+          }
+        ],
+        "id": "validate-home-page-features;verify-dropdown-menu-is-displayed-on-hovering-navigation-items;;5",
+        "tags": [
+          {
+            "name": "@homePage",
+            "line": 2
+          },
+          {
+            "name": "@verifyDropdownList",
+            "line": 11
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 70765,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.beforeSupport(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Verify dropdown menu is displayed on hovering navigation items",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "steps": [
+          {
+            "result": {
+              "duration": 8157200758,
+              "status": "passed"
+            },
+            "name": "I am at the homepage",
+            "keyword": "Given ",
+            "line": 13,
+            "match": {
+              "location": "HomePageSteps.launchHomePage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 577908661,
+              "status": "passed"
+            },
+            "name": "I hover on Books",
+            "keyword": "When ",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Books",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePageSteps.hoverOnNavBarMenu(String)"
+            },
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 60518467,
+              "status": "passed"
+            },
+            "name": "I see below dropdown list",
+            "keyword": "Then ",
+            "line": 15,
+            "match": {
+              "location": "HomePageSteps.verifyDropdownListItems(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "list item"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Novels"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Literature"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Academics"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Biography"
+                ],
+                "line": 20
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 582276129,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.closebrowser()"
+            }
+          }
+        ],
+        "id": "validate-home-page-features;verify-the-products-are-displayed",
+        "tags": [
+          {
+            "name": "@verifyProducts",
+            "line": 30
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 84810,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsSupport.beforeSupport(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "verify the products are displayed",
+        "keyword": "Scenario",
+        "line": 31,
+        "steps": [
+          {
+            "result": {
+              "duration": 6993066612,
+              "status": "passed"
+            },
+            "name": "I am at the homepage",
+            "keyword": "Given ",
+            "line": 32,
+            "match": {
+              "location": "HomePageSteps.launchHomePage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 454970783,
+              "status": "passed"
+            },
+            "name": "verify list of products is displayed",
+            "keyword": "Then ",
+            "line": 33,
+            "match": {
+              "location": "HomePageSteps.verifyProductListDisplayed()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1066120819,
+              "status": "passed"
+            },
+            "name": "verify image is displayed for each product",
+            "keyword": "And ",
+            "line": 34,
+            "match": {
+              "location": "HomePageSteps.verifyProductImageIsDisplayed()"
+            }
+          },
+          {
+            "result": {
+              "duration": 847686917,
+              "status": "passed"
+            },
+            "name": "verify title is displayed for each product",
+            "keyword": "And ",
+            "line": 35,
+            "match": {
+              "location": "HomePageSteps.verifyTitleIsDisplayed()"
+            }
+          },
+          {
+            "result": {
+              "duration": 853240110,
+              "status": "passed"
+            },
+            "name": "verify manufacturer is displayed for each product",
+            "keyword": "And ",
+            "line": 36,
+            "match": {
+              "location": "HomePageSteps.verifyManufacturerIsDisplayed()"
+            }
+          },
+          {
+            "result": {
+              "duration": 838599774,
+              "status": "passed"
+            },
+            "name": "verify description is displayed for each product",
+            "keyword": "And ",
+            "line": 37,
+            "match": {
+              "location": "HomePageSteps.verifyDescriptionIsDisplayed()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1100605719,
+              "status": "passed"
+            },
+            "name": "verify price is displayed for each product",
+            "keyword": "And ",
+            "line": 38,
+            "match": {
+              "location": "HomePageSteps.verifyPriceIsDisplayed()"
+            }
+          },
+          {
+            "result": {
+              "duration": 899011283,
+              "status": "passed"
+            },
+            "name": "verify add to cart button is displayed for each product",
+            "keyword": "And ",
+            "line": 39,
+            "match": {
+              "location": "HomePageSteps.verifyAddToCartButtonIsDisplayed()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "Features/homepage.feature"
+  }
+]

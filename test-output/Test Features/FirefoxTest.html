@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>TestNG:  FirefoxTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirefoxTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 13 01:46:42 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82612 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='eshopping.automation.firefox.testRunners.E2E_Runner.run_cukes()'><b>run_cukes</b><br>Test class: eshopping.automation.firefox.testRunners.E2E_Runner<br>Test method: Runs Cucumber Features<br/>
+<a href="#Output-1543658209" onClick='toggleBox("Output-1543658209", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1543658209" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1543658209">
+<div "featureFile">Feature File: Features&#x2F;E2E.feature</div><br/>
+<div "feature">Feature: E2E features</div><br/>
+<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div><br/>
+<div "result">Given  I am at the homepage (passed : 9s)</div><br/>
+<div "result">When  I add product number 1 to cart (passed : 1s)</div><br/>
+<div "result">Then  verify cart section is displayed (passed : 0s)</div><br/>
+<div "result">When  I click on checkout button (passed : 1s)</div><br/>
+<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 1s)</div><br/>
+<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div><br/>
+<div "result">And  I click on save address button (passed : 0s)</div><br/>
+<div "result">And  I click on continue to payment button (passed : 0s)</div><br/>
+<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div><br/>
+<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div><br/>
+<div "result">And  I click on Pay button (passed : 5s)</div><br/>
+<div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div><br/>
+<div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>eshopping.automation.firefox.testRunners.E2E_Runner@44865ee</td></tr>
+<tr>
+<td title='eshopping.automation.firefox.testRunners.HomePage_Runner.run_cukes()'><b>run_cukes</b><br>Test class: eshopping.automation.firefox.testRunners.HomePage_Runner<br>Test method: Runs Cucumber Features<br/>
+<a href="#Output-2006936655" onClick='toggleBox("Output-2006936655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2006936655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2006936655">
+<div "featureFile">Feature File: Features&#x2F;homepage.feature</div><br/>
+<div "feature">Feature: validate home page features</div><br/>
+<div "scenario">Scenario: Verify logo on the navigation bar of the page</div><br/>
+<div "result">Given  I am at the homepage (passed : 8s)</div><br/>
+<div "result">Then  verify the logo on navigation bar (passed : 0s)</div><br/>
+<div "scenarioOutline">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div><br/>
+<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div><br/>
+<div "result">Given  I am at the homepage (passed : 7s)</div><br/>
+<div "result">When  I hover on &lt;item&gt; (passed : 0s)</div><br/>
+<div "result">Then  I see below dropdown list (passed : 0s)</div><br/>
+<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div><br/>
+<div "result">Given  I am at the homepage (passed : 7s)</div><br/>
+<div "result">When  I hover on Games (passed : 0s)</div><br/>
+<div "result">Then  I see below dropdown list (passed : 0s)</div><br/>
+<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div><br/>
+<div "result">Given  I am at the homepage (passed : 7s)</div><br/>
+<div "result">When  I hover on Movies (passed : 0s)</div><br/>
+<div "result">Then  I see below dropdown list (passed : 0s)</div><br/>
+<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div><br/>
+<div "result">Given  I am at the homepage (passed : 8s)</div><br/>
+<div "result">When  I hover on Mobiles (passed : 0s)</div><br/>
+<div "result">Then  I see below dropdown list (passed : 0s)</div><br/>
+<div "scenario">Scenario: verify the products are displayed</div><br/>
+<div "result">Given  I am at the homepage (passed : 6s)</div><br/>
+<div "result">When  I hover on Books (passed : 0s)</div><br/>
+<div "result">Then  I see below dropdown list (passed : 1s)</div><br/>
+<div "result">Given  I am at the homepage (passed : 0s)</div><br/>
+<div "result">Then  verify list of products is displayed (passed : 0s)</div><br/>
+<div "result">And  verify image is displayed for each product (passed : 0s)</div><br/>
+<div "result">And  verify title is displayed for each product (passed : 1s)</div><br/>
+<div "result">And  verify manufacturer is displayed for each product (passed : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>eshopping.automation.firefox.testRunners.HomePage_Runner@2d1bee74</td></tr>
+</table><p>
+</body>
+</html>

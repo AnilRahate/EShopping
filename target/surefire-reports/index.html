@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test_Features">
+              <span class="suite-name border-passed">Test Features</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_Features">
+                    <span>E:\Workspace\surajJavaAutomationPractice\MobileAutomationLearning\eShoppingAutomation\Config\TestNG_Config\Run\test-feature.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_Features">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test_Features">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test_Features">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_Features">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_Features">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_Features">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Features" class="hide-methods passed suite-Test_Features"> (hide)</a> <!-- hide-methods passed suite-Test_Features -->
+                      <a href="#" panel-name="suite-Test_Features" class="show-methods passed suite-Test_Features"> (show)</a> <!-- show-methods passed suite-Test_Features -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_Features">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Features" title="eshopping.automation.firefox.testRunners.HomePage_Runner" hash-for-method="run_cukes">run_cukes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Features" title="eshopping.automation.firefox.testRunners.E2E_Runner" hash-for-method="run_cukes">run_cukes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Features" title="eshopping.automation.chrome.testRunners.E2E_Runner" hash-for-method="run_cukes">run_cukes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Features" title="eshopping.automation.chrome.testRunners.HomePage_Runner" hash-for-method="run_cukes">run_cukes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Features -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_Features" class="panel Test_Features">
+          <div class="suite-Test_Features-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eshopping.automation.firefox.testRunners.E2E_Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run_cukes">
+                  </a> <!-- run_cukes -->
+                  <span class="method-name">run_cukes</span>
+                  <em>
+(Runs Cucumber Features)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Features-class-passed -->
+          <div class="suite-Test_Features-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eshopping.automation.chrome.testRunners.E2E_Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run_cukes">
+                  </a> <!-- run_cukes -->
+                  <span class="method-name">run_cukes</span>
+                  <em>
+(Runs Cucumber Features)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Features-class-passed -->
+          <div class="suite-Test_Features-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eshopping.automation.chrome.testRunners.HomePage_Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run_cukes">
+                  </a> <!-- run_cukes -->
+                  <span class="method-name">run_cukes</span>
+                  <em>
+(Runs Cucumber Features)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Features-class-passed -->
+          <div class="suite-Test_Features-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eshopping.automation.firefox.testRunners.HomePage_Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run_cukes">
+                  </a> <!-- run_cukes -->
+                  <span class="method-name">run_cukes</span>
+                  <em>
+(Runs Cucumber Features)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Features-class-passed -->
+        </div> <!-- panel Test_Features -->
+        <div panel-name="test-xml-Test_Features" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Workspace\surajJavaAutomationPractice\MobileAutomationLearning\eShoppingAutomation\Config\TestNG_Config\Run\test-feature.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test Features&quot;&gt;
+  &lt;test name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;eshopping.automation.firefox.testRunners.E2E_Runner&quot;/&gt;
+      &lt;class name=&quot;eshopping.automation.firefox.testRunners.HomePage_Runner&quot;/&gt;
+      &lt;class name=&quot;eshopping.automation.support.RunnerSupport&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;eshopping.automation.chrome.testRunners.E2E_Runner&quot;/&gt;
+      &lt;class name=&quot;eshopping.automation.chrome.testRunners.HomePage_Runner&quot;/&gt;
+      &lt;class name=&quot;eshopping.automation.support.RunnerSupport&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- Test Features --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_Features" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test Features</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">FirefoxTest (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTest (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_Features" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test Features</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">run_cukes</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_Features" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test Features</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_Features');
+function tableData_Test_Features() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'run_cukes')
+data.setCell(0, 2, 'eshopping.automation.chrome.testRunners.HomePage_Runner')
+data.setCell(0, 3, 66185);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'run_cukes')
+data.setCell(1, 2, 'eshopping.automation.chrome.testRunners.E2E_Runner')
+data.setCell(1, 3, 36872);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'run_cukes')
+data.setCell(2, 2, 'eshopping.automation.firefox.testRunners.HomePage_Runner')
+data.setCell(2, 3, 27703);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'run_cukes')
+data.setCell(3, 2, 'eshopping.automation.firefox.testRunners.E2E_Runner')
+data.setCell(3, 3, 27154);
+window.suiteTableData['Test_Features']= { tableData: data, tableDiv: 'times-div-Test_Features'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Test_Features">
+              </div> <!-- times-div-Test_Features -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_Features" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test Features</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">run_cukes</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "featureFile">Feature File: Features&#x2F;homepage.feature</div></span>
+                <span class="reporter-method-output"><div "feature">Feature: validate home page features</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 11s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I add product number 1 to cart (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify cart section is displayed (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I click on checkout button (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on save address button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on continue to payment button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on Pay button (passed : 6s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">run_cukes</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "featureFile">Feature File: Features&#x2F;E2E.feature</div></span>
+                <span class="reporter-method-output"><div "feature">Feature: E2E features</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 11s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I add product number 1 to cart (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify cart section is displayed (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I click on checkout button (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on save address button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on continue to payment button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on Pay button (passed : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">run_cukes</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "featureFile">Feature File: Features&#x2F;E2E.feature</div></span>
+                <span class="reporter-method-output"><div "feature">Feature: E2E features</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 17s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I add product number 1 to cart (passed : 3s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify cart section is displayed (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I click on checkout button (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on save address button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on continue to payment button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on Pay button (passed : 9s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">run_cukes</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "featureFile">Feature File: Features&#x2F;homepage.feature</div></span>
+                <span class="reporter-method-output"><div "feature">Feature: validate home page features</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario: Verify logo on the navigation bar of the page</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify the logo on navigation bar (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "scenarioOutline">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I hover on &lt;item&gt; (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I see below dropdown list (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I hover on Games (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I see below dropdown list (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I hover on Movies (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I see below dropdown list (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I hover on Mobiles (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I see below dropdown list (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario: verify the products are displayed</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I hover on Books (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I see below dropdown list (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify list of products is displayed (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify image is displayed for each product (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify title is displayed for each product (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify manufacturer is displayed for each product (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div></span>
+                <span class="reporter-method-output"><div "result">And  verify description is displayed for each product (passed : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify price is displayed for each product (passed : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">And  verify add to cart button is displayed for each product (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Given  I am at the homepage (passed : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I add product number 1 to cart (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  verify cart section is displayed (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I click on checkout button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on save address button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I click on continue to payment button (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;12&quot; in expiry month (passed : 8s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_Features" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_Features" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.support.RunnerSupport</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforesuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">ttt(org.testng.TestRunner@8fee1db)</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.firefox.testRunners.E2E_Runner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run_cukes</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.firefox.testRunners.HomePage_Runner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run_cukes</span>
+                <span class="method-start">27185 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.support.RunnerSupport</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">54888 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.chrome.testRunners.E2E_Runner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run_cukes</span>
+                <span class="method-start">54904 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.support.RunnerSupport</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">ttt(org.testng.TestRunner@159df57a)</span>
+                <span class="method-start">54904 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.chrome.testRunners.HomePage_Runner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run_cukes</span>
+                <span class="method-start">91776 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eshopping.automation.support.RunnerSupport</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">aftersuite</span>
+                <span class="method-start">157961 ms</span>
+              </div> <!-- configuration-suite after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">157961 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

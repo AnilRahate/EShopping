@@ -1,0 +1,4 @@
+eshopping\automation\base\TestBase.class
+eshopping\automation\locators\HomePageLocators.class
+eshopping\automation\utils\ApplicationPropertiesInitializer.class
+eshopping\automation\base\TestBase$1.class

@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: Features&#x2F;E2E.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: E2E features</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 11s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I add product number 1 to cart (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify cart section is displayed (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I click on checkout button (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on Pay button (passed : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: Features&#x2F;homepage.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: validate home page features</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 11s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I add product number 1 to cart (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify cart section is displayed (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I click on checkout button (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on Pay button (passed : 6s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: Features&#x2F;E2E.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: E2E features</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 17s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I add product number 1 to cart (passed : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify cart section is displayed (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I click on checkout button (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on Pay button (passed : 9s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: Features&#x2F;homepage.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: validate home page features</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: Verify logo on the navigation bar of the page</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify the logo on navigation bar (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenarioOutline">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I hover on &lt;item&gt; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I hover on Games (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I hover on Movies (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I hover on Mobiles (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: verify the products are displayed</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I hover on Books (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I see below dropdown list (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify list of products is displayed (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify image is displayed for each product (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify title is displayed for each product (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify manufacturer is displayed for each product (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify description is displayed for each product (passed : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify price is displayed for each product (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  verify add to cart button is displayed for each product (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I am at the homepage (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I add product number 1 to cart (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  verify cart section is displayed (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I click on checkout button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 8s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Test Features" duration-ms="157946" started-at="2017-02-12T20:01:23Z" finished-at="2017-02-12T20:04:01Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:eshopping.automation.firefox.testRunners.E2E_Runner@678aa6a7]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:eshopping.automation.firefox.testRunners.HomePage_Runner@3fc3530c]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:eshopping.automation.chrome.testRunners.E2E_Runner@62787c64]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:eshopping.automation.chrome.testRunners.HomePage_Runner@542ebbbd]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="FirefoxTest" duration-ms="54873" started-at="2017-02-12T20:01:23Z" finished-at="2017-02-12T20:02:18Z">
+      <class name="eshopping.automation.firefox.testRunners.HomePage_Runner">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:eshopping.automation.firefox.testRunners.HomePage_Runner@3fc3530c]" name="run_cukes" duration-ms="27703" started-at="2017-02-13T01:31:50Z" description="Runs Cucumber Features" finished-at="2017-02-13T01:32:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: Features&#x2F;homepage.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: validate home page features</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 11s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I add product number 1 to cart (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify cart section is displayed (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I click on checkout button (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on Pay button (passed : 6s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+      </class> <!-- eshopping.automation.firefox.testRunners.HomePage_Runner -->
+      <class name="eshopping.automation.firefox.testRunners.E2E_Runner">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:eshopping.automation.firefox.testRunners.E2E_Runner@678aa6a7]" name="run_cukes" duration-ms="27154" started-at="2017-02-13T01:31:23Z" description="Runs Cucumber Features" finished-at="2017-02-13T01:31:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: Features&#x2F;E2E.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: E2E features</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 11s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I add product number 1 to cart (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify cart section is displayed (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I click on checkout button (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on Pay button (passed : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+      </class> <!-- eshopping.automation.firefox.testRunners.E2E_Runner -->
+      <class name="eshopping.automation.support.RunnerSupport">
+        <test-method status="PASS" signature="ttt(org.testng.ITestContext)[pri:0, instance:eshopping.automation.support.RunnerSupport@26c55db3]" name="ttt" is-config="true" duration-ms="0" started-at="2017-02-13T01:31:23Z" finished-at="2017-02-13T01:31:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@8fee1db]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ttt -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:eshopping.automation.support.RunnerSupport@26c55db3]" name="teardown" is-config="true" duration-ms="0" started-at="2017-02-13T01:32:18Z" finished-at="2017-02-13T01:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- eshopping.automation.support.RunnerSupport -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest" duration-ms="103057" started-at="2017-02-12T20:02:18Z" finished-at="2017-02-12T20:04:01Z">
+      <class name="eshopping.automation.chrome.testRunners.HomePage_Runner">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:eshopping.automation.chrome.testRunners.HomePage_Runner@542ebbbd]" name="run_cukes" duration-ms="66185" started-at="2017-02-13T01:32:55Z" description="Runs Cucumber Features" finished-at="2017-02-13T01:34:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: Features&#x2F;homepage.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: validate home page features</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: Verify logo on the navigation bar of the page</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify the logo on navigation bar (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenarioOutline">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I hover on &lt;item&gt; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I hover on Games (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I hover on Movies (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Verify dropdown menu is displayed on hovering navigation items</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I hover on Mobiles (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I see below dropdown list (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: verify the products are displayed</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I hover on Books (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I see below dropdown list (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify list of products is displayed (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify image is displayed for each product (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify title is displayed for each product (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify manufacturer is displayed for each product (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify description is displayed for each product (passed : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify price is displayed for each product (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify add to cart button is displayed for each product (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I add product number 1 to cart (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify cart section is displayed (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I click on checkout button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 8s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+      </class> <!-- eshopping.automation.chrome.testRunners.HomePage_Runner -->
+      <class name="eshopping.automation.chrome.testRunners.E2E_Runner">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:eshopping.automation.chrome.testRunners.E2E_Runner@62787c64]" name="run_cukes" duration-ms="36872" started-at="2017-02-13T01:32:18Z" description="Runs Cucumber Features" finished-at="2017-02-13T01:32:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: Features&#x2F;E2E.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: E2E features</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: verify the user navigates to cart page on adding a product to cart</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I am at the homepage (passed : 17s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I add product number 1 to cart (passed : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify cart section is displayed (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I click on checkout button (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;suraj&quot; in full name (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;phase2&quot; in address1 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;hinjewadi&quot; in address2 (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;pune&quot; in city (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;521452&quot; in zip code (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;Maharashtra&quot; in State (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on save address button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on continue to payment button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I enter &quot;555544446666&quot; in card number (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;suraj&quot; in name on card (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;12&quot; in expiry month (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;21&quot; in expiry year (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I enter &quot;544&quot; in cvv code (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  I click on Pay button (passed : 9s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  verify order status of product is &quot;Pending&quot; (passed : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+      </class> <!-- eshopping.automation.chrome.testRunners.E2E_Runner -->
+      <class name="eshopping.automation.support.RunnerSupport">
+        <test-method status="PASS" signature="beforesuite()[pri:0, instance:eshopping.automation.support.RunnerSupport@440fb224]" name="beforesuite" is-config="true" duration-ms="15" started-at="2017-02-13T01:31:23Z" finished-at="2017-02-13T01:31:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method status="PASS" signature="ttt(org.testng.ITestContext)[pri:0, instance:eshopping.automation.support.RunnerSupport@440fb224]" name="ttt" is-config="true" duration-ms="0" started-at="2017-02-13T01:32:18Z" finished-at="2017-02-13T01:32:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@159df57a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ttt -->
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:eshopping.automation.support.RunnerSupport@440fb224]" name="aftersuite" is-config="true" duration-ms="1203" started-at="2017-02-13T01:34:01Z" finished-at="2017-02-13T01:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:eshopping.automation.support.RunnerSupport@440fb224]" name="teardown" is-config="true" duration-ms="0" started-at="2017-02-13T01:34:01Z" finished-at="2017-02-13T01:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- eshopping.automation.support.RunnerSupport -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Test Features -->
+</testng-results>

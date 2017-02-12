@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Cucumber-JVM Html Reports - Feature: E2E features </title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="blue/css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/skin/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/960.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/text.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="blue/favicon.ico" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<style>
+
+h2 {
+	font-size: 24px !important;
+}
+
+.feature-keyword {
+	font-weight: bold;
+}
+
+.feature-description {
+	padding-left: 15px;
+	font-style: italic;
+	background-color: beige;
+}
+
+.feature-role {
+	font-weight: bold;
+}
+
+.feature-action {
+	font-weight: bold;
+}
+
+.feature-value {
+	font-weight: bold;
+}
+
+.feature-tags {
+	padding-top: 10px;
+	padding-left: 15px;
+	color: darkblue;
+}
+
+.scenario-keyword {
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+.scenario-scenario_name {
+	padding-left: 15px;
+}
+
+.step-keyword {
+	font-weight: bold;
+	padding-left: 50px;
+}
+
+.step-error-message {
+	background-color: #FFEEEE;
+	padding-left: 50px;
+	border: 1px solid #D88A8A;
+}
+
+.step-error-message-content {
+	margin-bottom: 5px;
+	overflow: auto;
+}
+
+.collapse {
+	display:none;
+}
+
+.collapse + label {
+	font-size: 12px;
+	font-weight: bold;
+	display:block;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.collapse + label + * {
+	display:none;
+}
+
+.collapse:checked + label + * {
+	display:block;
+}
+
+.collapse + label:before {
+	background-color: #4F5150;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	content: "+";
+	display: block;
+	float: left;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 5px;
+	text-align: center;
+	width: 20px;
+}
+
+.collapse:checked + label:before {
+	content: "\2212";
+}
+
+.step-duration {
+	float: right;
+	padding-right: 15px;
+}
+
+.passed {
+	background-color: #C5D88A;
+}
+
+.failed {
+	background-color: #D88A8A;
+}
+
+.skipped {
+	background-color: #88AAFF;
+}
+
+.pending {
+	background-color: #FBB907;
+}
+
+.undefined {
+	background-color: #FBB987;
+}
+
+.missing {
+	background-color: #FBB9D7;
+}
+
+table.stats-table {
+	color: black;
+	width: 100%;
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+table.stats-table th {
+	color: black;
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #66CCEE;
+	-moz-border-radius:;
+}
+
+table.stats-table td {
+	color: black;
+	text-align: center;
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius:;
+}
+
+table.data-table {
+	color: black;
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: #d6d6d6;
+	border-collapse: collapse;
+	background-color: beige;
+}
+
+table.data-table th {
+	color: black;
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: #d6d6d6;
+	background-color: #66CCEE;
+}
+
+table.data-table td {
+	color: black;
+	text-align: center;
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: #d6d6d6;
+	background-color: beige;
+}
+
+.data {
+	padding-left: 50px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.output-data {
+	padding-left: 50px;
+	background-color: beige;
+	text-indent: 50px;
+}
+
+.doc-string {
+	width: auto;
+	display: inline-block;
+	margin: 10px auto 10px 70px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.35);
+	border-radius: 10px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 95%;
+}
+
+.graph {
+	margin-bottom: 50px;
+	margin-top: 30px;
+	clear: both;
+	font-family: georgia, serif;
+	font-size: 14px;
+}
+
+.graph-header h3 {
+	margin-bottom: 0px;
+}
+
+.graph-header {
+	text-align: center;
+}
+
+.graph-header p {
+	margin-top: 0px;
+}
+
+.graph .legend td, .graph .legend, .graph .legend tr {
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+}
+
+.graph .legend {
+	margin-left: 10px;
+}
+
+.graph .legend td {
+	padding-right: 5px;
+}
+
+.graph .legend .color-box {
+	width: 14px;
+	height: 10px;
+	overflow: hidden;
+}
+
+.graph .label {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+	position: absolute;
+	right: -5px;
+	top: 15px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+}
+
+table#tablesorter thead tr th {
+	cursor: pointer;
+}
+
+</style>
+</head>
+<body id="top">
+
+     <div id="fullwidth_header">
+     <div class="container_12">
+         <h1 class="grid_4 logo"><a href="feature-overview.html" class='ie6fix'>Cucumber</a></h1>
+
+         <div id="nav">
+             <ul>
+                                  <li><a href="tag-overview.html">Tags</a></li>
+                 <li><a href="feature-overview.html">Feature</a></li>
+                 <li><a href="step-overview.html">Steps</a></li>
+             </ul>
+         </div>
+     </div>
+</div>
+
+        <div id="fullwidth_gradient">
+    <div class="container_12">
+        <div class="grid_9 heading">
+            <h2 id="feature-title">Result for <span style="color:#66CCEE;"><i>E2E features</i></span> in build: 1</h2>
+        </div>
+    </div>
+</div>
+
+    <div class="container_12">
+        <div class="grid_12">
+
+            <div>
+                <table class="stats-table">
+                                        <thead>
+    <tr>
+                    <th></th>
+                <th></th>
+        <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+        <th id="stats-header-steps" colspan="7">Steps</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+            <th id="stats-header-key">Feature</th>
+                            <th id="stats-header-device">Device</th>
+                        <th id="stats-header-scenarios-total">Total</th>
+            <th id="stats-header-scenarios-passed">Passed</th>
+            <th id="stats-header-scenarios-failed">Failed</th>
+            <th id="stats-header-steps-total">Total</th>
+            <th id="stats-header-steps-passed"    style="background-color:#00CE00;">Passed</th>
+            <th id="stats-header-steps-failed"    style="background-color:#FF0000;">Failed</th>
+            <th id="stats-header-steps-skipped"   style="background-color:#88AAFF;">Skipped</th>
+            <th id="stats-header-steps-pending"   style="background-color:#FBB907;">Pending</th>
+            <th id="stats-header-steps-undefined" style="background-color:#FBB957;">Undefined</th>
+            <th id="stats-header-steps-missing"   style="background-color:#FBB9A7;">Missing</th>
+            <th id="stats-header-duration">Duration</th>
+            <th id="stats-header-status">Status</th>
+    </tr>
+</thead>
+                    
+                    
+                    <tr>
+                        <td><a id="stats-E2E features" href="Features-E2E-feature.html">E2E features</a></td>
+                                                  <td id="device">firefox</td>
+                                                <td id="stats-number-scenarios-E2E features">1</td>
+                        <td id="stats-number-scenarios-passed-E2E features">0</td>
+                        <td id="stats-number-scenarios-failed-E2E features">1</td>
+                        <td id="stats-number-steps-E2E features">21</td>
+                        <td id="stats-number-steps-passed-E2E features">19</td>
+                        <td id="stats-number-steps-failed-E2E features"      style="background-color:#FF0000;" >1</td>
+                        <td id="stats-number-steps-skipped-E2E features"      style="background-color:#88AAFF;" >1</td>
+                        <td id="stats-number-steps-pending-E2E features"   >0</td>
+                        <td id="stats-number-steps-undefined-E2E features" >0</td>
+                        <td id="stats-number-steps-missing-E2E features"   >0</td>
+                        <td id="stats-duration-E2E features" style="text-align:right;white-space:nowrap">1m 04s 003ms</td>
+                        <td id="stats-status-E2E features" style="background-color: #FF0000;">failed</td></tr>
+
+                </table>
+
+            </div>
+
+        <div style="color:black;">
+
+            <div class="feature-tags"><a href="E2E.html">@E2E</a></div>
+            <div class="failed"><div class="feature-line"><span class="feature-keyword">Feature:</span> E2E features</div></div>
+            
+
+                            <div class="feature-tags"><a href="e2e.html">@e2e</a></div>
+                <div class="failed"><span class="scenario-keyword">Scenario: </span> <span class="scenario-name">verify the user navigates to cart page on adding a product to cart</span></div>
+                                  <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I am at the homepage</span><span class="step-duration">20s 615ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I add product number 1 to cart</span><span class="step-duration">635ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">verify cart section is displayed</span><span class="step-duration">01s 410ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I click on checkout button</span><span class="step-duration">171ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I login with username as &quot;Suraj&quot; and password as &quot;suraj&quot;</span><span class="step-duration">02s 930ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I enter &quot;suraj&quot; in full name</span><span class="step-duration">244ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;phase2&quot; in address1</span><span class="step-duration">210ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;hinjewadi&quot; in address2</span><span class="step-duration">203ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;pune&quot; in city</span><span class="step-duration">222ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;521452&quot; in zip code</span><span class="step-duration">329ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;Maharashtra&quot; in State</span><span class="step-duration">220ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I click on save address button</span><span class="step-duration">710ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I click on continue to payment button</span><span class="step-duration">415ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I enter &quot;555544446666&quot; in card number</span><span class="step-duration">184ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;suraj&quot; in name on card</span><span class="step-duration">078ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;12&quot; in expiry month</span><span class="step-duration">070ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;21&quot; in expiry year</span><span class="step-duration">094ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I enter &quot;544&quot; in cvv code</span><span class="step-duration">163ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I click on Pay button</span><span class="step-duration">06s 750ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="failed"><span class="step-keyword">Then  </span><span class="step-name">verify order successful message is displayed as &quot;Thanks for placing your order!! Your order will be dispatched soon!!&quot;</span><span class="step-duration">28s 340ms</span><div class="step-error-message"><pre class="step-error-message-content"><input class="collapse" id="_2" type="checkbox"><label for="_2">org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#main>h3"}</label><div>Command duration or timeout: 65 milliseconds<br/>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'<br/>System info: host: 'Acer', ip: '192.168.43.173', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0'<br/>*** Element info: {Using=css selector, value=#main>h3}<br/>Session ID: 27645312-24dc-47c4-b42d-c12770f94af4<br/>Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=43.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br/>	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br/>	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)<br/>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br/>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)<br/>	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br/>	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br/>	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br/>	at $Proxy21.getText(Unknown Source)<br/>	at eshopping.automation.pageObjects.OrderPage.getThanksMsgHeader(OrderPage.java:26)<br/>	at eshopping.automation.stepDefinitions.OrderPageSteps.verifyOrderSuccessMsg(OrderPageSteps.java:19)<br/>	at âœ½.Then verify order successful message is displayed as "Thanks for placing your order!! Your order will be dispatched soon!!"(Features/E2E.feature:27)<br/>Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#main>h3"}<br/>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'<br/>System info: host: 'Acer', ip: '192.168.43.173', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0'<br/>Driver info: driver.version: unknown<br/>	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/KIRANB~1/AppData/Local/Temp/anonymous6456512282955636707webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)<br/>	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/KIRANB~1/AppData/Local/Temp/anonymous6456512282955636707webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)<br/>	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/KIRANB~1/AppData/Local/Temp/anonymous6456512282955636707webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)<br/>	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/KIRANB~1/AppData/Local/Temp/anonymous6456512282955636707webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)<br/>	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/KIRANB~1/AppData/Local/Temp/anonymous6456512282955636707webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)<br/></div></pre></div></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                                  <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">verify order status of product is &quot;Pending&quot;</span><span class="step-duration">000ms</span></div>
+                    
+                                        <div class="output-data">
+                                        </div>
+                            
+    </div>
+</div>
+
+
+<div class="container_12">
+    <div class="grid_12 hr"></div>
+    <div class="grid_12 footer">
+        <p style="text-align:center;"><a href="https://github.com/damianszczepanik/jenkins-cucumber-jvm-reports-plugin-java">Cucumber-JVM Jenkins Report Plugin</a> - build: 13-02-2017 01:43:22</p>
+    </div>
+</div>
+<div class="clear"></div>
+
+</body>
+</html>

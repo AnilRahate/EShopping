@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Features" verbose="1"  parallel="tests" thread-count="1">
+ 	
+ 	<test name="FirefoxTest">
+ 	    <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="eshopping.automation.firefox.testRunners.E2E_Runner"/>
+            <class name="eshopping.automation.firefox.testRunners.HomePage_Runner"/>
+            <class name="eshopping.automation.support.RunnerSupport"/><!--RunnerSupport is mandatory here -->
+        </classes>
+    </test>
+     <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+           <class name="eshopping.automation.chrome.testRunners.E2E_Runner"/>
+           <class name="eshopping.automation.chrome.testRunners.HomePage_Runner"/>
+            <class name="eshopping.automation.support.RunnerSupport"/>
+        </classes>
+    </test>
+  
+</suite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Test Features]" parallel="methods">
+  <parameter name="browser" value="chrome"/>
+  <test name="FirefoxTest(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="eshopping.automation.firefox.testRunners.E2E_Runner">
+        <methods>
+          <include name="run_cukes"/>
+        </methods>
+      </class> <!-- eshopping.automation.firefox.testRunners.E2E_Runner -->
+      <class name="eshopping.automation.support.RunnerSupport">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="ttt"/>
+          <include name="ttt"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="beforesuite"/>
+        </methods>
+      </class> <!-- eshopping.automation.support.RunnerSupport -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="eshopping.automation.chrome.testRunners.HomePage_Runner">
+        <methods>
+          <include name="run_cukes"/>
+        </methods>
+      </class> <!-- eshopping.automation.chrome.testRunners.HomePage_Runner -->
+      <class name="eshopping.automation.chrome.testRunners.E2E_Runner">
+        <methods>
+          <include name="run_cukes"/>
+        </methods>
+      </class> <!-- eshopping.automation.chrome.testRunners.E2E_Runner -->
+      <class name="eshopping.automation.support.RunnerSupport">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="ttt"/>
+          <include name="ttt"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="beforesuite"/>
+        </methods>
+      </class> <!-- eshopping.automation.support.RunnerSupport -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Test Features] -->
