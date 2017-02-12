@@ -24,8 +24,8 @@ import eshopping.automation.utils.ApplicationPropertiesInitializer;
 public class TestBase {
 	public static WebDriver driver = null;
 	public  static ApplicationPropertiesInitializer applicationProperties = null; 
-	public  String path= System.getProperty("user.dir");
-	public  String separatorFile = System.getProperty("file.separator");
+	//public  String path= System.getProperty("user.dir");
+	//public  String separatorFile = System.getProperty("file.separator");
 	public  WebDriverWait wait;
     public TestBase(){
     	if(driver == null){
@@ -48,7 +48,7 @@ public class TestBase {
     	String browser=System.getProperty("browser");
     	switch (browser) {
 		case "chrome":
-			String dir = path + separatorFile + "Config/Drivers/chromedriver.exe";
+			String dir = "Config/Drivers/chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", dir);
 			driver = new ChromeDriver();
 			break;
