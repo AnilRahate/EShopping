@@ -16,9 +16,10 @@ public class stepsSupport {
 	@After
 	public void closebrowser() throws Exception{
 		//TestBase.driver.manage().deleteAllCookies();
+		if(TestBase.driver !=null){
 		TestBase.driver.quit();
 		TestBase.driver =  null;
-		
+		}
 	}
 	
 }
