@@ -48,7 +48,8 @@ public class TestBase {
     	String browser=System.getProperty("browser");
     	switch (browser) {
 		case "chrome":
-			String dir = path + separatorFile + "Config/Drivers/chromedriver.exe";
+			String dir = "D://chromedriver.exe";
+			//String dir = path + separatorFile + "Config/Drivers/chromedriver.exe";
 			System.out.println("--------------------------------------------"+dir);
 			System.setProperty("webdriver.chrome.driver", dir);
 			driver = new ChromeDriver();
