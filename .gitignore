@@ -1,8 +1,7 @@
- *~
-.DS_Store
-.project
-.settings
-.classpath
-.metadata
-*/target/**
-*/test-output/**
+.idea
+*.iml
+target/
+test-output/
+bin/
+*.class
+*.png
