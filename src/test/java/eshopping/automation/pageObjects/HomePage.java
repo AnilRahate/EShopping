@@ -42,6 +42,7 @@ public class HomePage extends TestBase implements HomePageLocators{
 	 */
 	public void launchPage(){
 		driver.get(applicationProperties.getApplicationPropertiesObject().getProperty("baseUrl"));
+		waitForPageLoad();
 	}
 
 	public void verifyLogoOnPage() {

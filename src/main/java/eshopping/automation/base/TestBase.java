@@ -48,9 +48,8 @@ public class TestBase {
     	String browser=System.getProperty("browser");
     	switch (browser) {
 		case "chrome":
-			String dir = "D://chromedriver.exe";
-			//String dir = path + separatorFile + "Config/Drivers/chromedriver.exe";
-			System.out.println("--------------------------------------------"+dir);
+			//String dir = "D://chromedriver.exe";
+			String dir = path + separatorFile + "Config/Drivers/chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", dir);
 			driver = new ChromeDriver();
 			break;
@@ -172,4 +171,7 @@ public class TestBase {
     public void scrollElementIntoView(WebElement element) {
         getJS().executeScript("return arguments[0].scrollIntoView(true);", element);
     }   
+    
+   
+    
 }

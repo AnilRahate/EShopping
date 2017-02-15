@@ -32,6 +32,7 @@ public class PaymentPage extends TestBase implements HomePageLocators{
 	
 	public PaymentPage(){
 		PageFactory.initElements(driver, this);
+		waitForPageLoad();
 	}
 
 	public WebElement getCardNumberTxtBox() {

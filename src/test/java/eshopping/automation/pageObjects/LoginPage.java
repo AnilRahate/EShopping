@@ -26,6 +26,7 @@ public class LoginPage extends TestBase implements HomePageLocators{
 	
 	public LoginPage(){
 		PageFactory.initElements(driver, this);
+		waitForPageLoad();
 	}
 
 	public WebElement getUserNameTxtBox() {

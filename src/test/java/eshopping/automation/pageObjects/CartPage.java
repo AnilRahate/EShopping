@@ -20,6 +20,7 @@ public class CartPage extends TestBase implements HomePageLocators{
 	
 	public CartPage(){
 		PageFactory.initElements(driver, this);
+		waitForPageLoad();
 	}
 
 	public WebElement getCartSection(){

@@ -70,6 +70,7 @@ public class CheckoutPage extends TestBase implements HomePageLocators{
 	
 	public CheckoutPage(){
 		PageFactory.initElements(driver, this);
+		waitForPageLoad();
 	}
 
 	public void enterFullName(String name){
