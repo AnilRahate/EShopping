@@ -20,6 +20,7 @@ public class OrderPage extends TestBase implements HomePageLocators{
 		
 	public OrderPage(){
 		PageFactory.initElements(driver, this);
+		waitForPageLoad();
 	}
 	
 	public String getThanksMsgHeader(){
